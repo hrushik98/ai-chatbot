@@ -83,9 +83,9 @@ if st.button("Go"):
     #     st.session_state['generated'] = []
     # if 'past' not in st.session_state:
     #     st.session_state['past'] = []
-    message(input_question, is_user=True)
-    message(answer) 
-    
+#     message(input_question, is_user=True)
+#     message(answer) 
+    st.header(answer)
     
     writetocsvb(answer)
 
