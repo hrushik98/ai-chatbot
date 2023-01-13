@@ -1,14 +1,37 @@
 
 
+
 import streamlit as st
 import os
 import openai
 
 
-openai.api_key =  st.secrets['API_KEY']
+openai.api_key =  "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"
 
-st.header("Created by @Hrush1k")
+st.title("Created by @Hrush1k")
+if st.button("View Code"):
+    st.write(f'''
+    <a target="_self" href="https://github.com/hrushik98/ai-chatbot">
+        <button>
+            github
+        </button>
+    </a>
+    ''',
+    unsafe_allow_html=True
+)
+st.text("")
+if st.button("to do list"):
 
+    st.write("""
+To do list:
+1. Improve the User Interface  ✅ 
+2. Take care of punctuation
+3. Make it feel more chat-like
+4. Implement Internet search (via, google or bing) 
+5. Integrate human voice for input 
+6. Take care of token limit
+""")
+st.text("")
 input_question = st.text_input("enter the message: ")
 l1 = []
 
@@ -71,15 +94,9 @@ if st.button("Go"):
 
     question = listToString(flat_list)
     answer = ask(question)
-    # storing the chat
-    # if 'generated' not in st.session_state:
-    #     st.session_state['generated'] = []
-    # if 'past' not in st.session_state:
-    #     st.session_state['past'] = []
-    message(input_question, is_user=True)
-    message(answer) 
-    
-    
+
+    st.header(answer)
+
     writetocsvb(answer)
 
 
