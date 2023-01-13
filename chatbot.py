@@ -68,12 +68,12 @@ import csv
 
 
 def writetocsvh(question):
-    with open("results.csv", "a") as f:
+    with open("results.csv", "w") as f:
         data = csv.writer(f)
         name = "\nHuman:" + question
         data.writerow([name])
 def writetocsvb(question):
-    with open("results.csv", "a") as f:
+    with open("results.csv", "w") as f:
         data = csv.writer(f)
         name = "\nAI:" + question
         data.writerow([name])
