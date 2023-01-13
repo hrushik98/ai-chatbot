@@ -11,7 +11,7 @@ openai.api_key = st.secrets['API_KEY']
 st.title("Created by @Hrush1k")
 if st.button("View Code"):
     st.write(f'''
-    <a target="_self" href="https://github.com/hrushik98/ai-chatbot">
+    <a target="_self" href="https://github.com/hrushik98">
         <button>
             github
         </button>
@@ -27,9 +27,8 @@ To do list:
 1. Improve the User Interface  ✅ 
 2. Take care of punctuation
 3. Make it feel more chat-like
-4. Implement Internet search (via, google or bing) 
-5. Integrate human voice for input 
-6. Take care of token limit
+4. Integrate human voice for input 
+5. Take care of token limit
 """)
 st.text("")
 input_question = st.text_input("enter the message: ")
