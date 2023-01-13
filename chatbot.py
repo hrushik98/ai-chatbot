@@ -6,7 +6,7 @@ import os
 import openai
 
 
-openai.api_key = st.Secrets['API_KEY']
+openai.api_key = st.secrets['API_KEY']
 
 st.title("Created by @Hrush1k")
 if st.button("View Code"):
