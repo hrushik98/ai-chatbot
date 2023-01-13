@@ -1,13 +1,6 @@
 
 
-
-
-#
-# message("Hello bot!", is_user=True)  # align's the message to the right
-
-
 import streamlit as st
-from streamlit_chat import message
 import os
 import openai
 
