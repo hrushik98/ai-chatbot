@@ -8,7 +8,7 @@ import openai
 
 openai.api_key =  st.secrets['API_KEY']
 
-st.title("Cleverbot")
+st.title("Fueza - an AI chatbot")
 st.text("created by @Hrush1k")
 st.text("")
 if st.button("to do list"):
