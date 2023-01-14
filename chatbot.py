@@ -9,11 +9,7 @@ import openai
 openai.api_key =  st.secrets['API_KEY']
 
 st.title("Cleverbot")
-st.header("created by @Hrush1k")
-if st.button('Go to website'):
-    
-   st.write('<script>window.open("https://www.google.com","_blank");</script>', unsafe_allow_html=True)
-
+st.text("created by @Hrush1k")
 st.text("")
 if st.button("to do list"):
 
