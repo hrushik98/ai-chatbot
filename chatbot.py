@@ -8,17 +8,11 @@ import openai
 
 openai.api_key =  st.secrets['API_KEY']
 
-st.title("Created by @Hrush1k")
-if st.button("View Code"):
-    st.write(f'''
-    <a target="_self" href="https://github.com/hrushik98/ai-chatbot">
-        <button>
-            github
-        </button>
-    </a>
-    ''',
-    unsafe_allow_html=True
-)
+st.title("Cleverbot")
+st.header("created by @Hrush1k")
+if st.button('View Code'):
+        st.write('<script>window.location.href = "https://github.com/hrushik98/ai-chatbot";</script>', unsafe_allow_html=True)
+
 st.text("")
 if st.button("to do list"):
 
