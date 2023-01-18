@@ -16,29 +16,10 @@ my_headers = {"User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 14685.0.0) AppleWebKi
 openai.api_key = st.secrets['API_KEY1']
 client = wolframalpha.Client("HYGK4Y-T5TL57KJ8H")
 
-st.title("Created by @Hrush1k")
-if st.button("View Code"):
-    st.write(f'''
-    <a target="_self" href="https://github.com/hrushik98/ai-chatbot">
-        <button>
-            github
-        </button>
-    </a>
-    ''',
-    unsafe_allow_html=True
-)
-st.text("")
-if st.button("to do list"):
+st.title("Fueza - an AI Chatbot")
 
-    st.write("""
-To do list:
-1. Improve the User Interface  ✅ 
-2. Take care of punctuation
-3. Make it feel more chat-like
-4. Implement Internet search (via, google or bing) 
-5. Integrate human voice for input 
-6. Take care of token limit
-""")
+st.text("created by hrushik98(github) / Phani Hrushik Reddy (LinkedIN)")
+
 st.text("")
 input_question = st.text_input("enter the message: ")
 l1 = []
