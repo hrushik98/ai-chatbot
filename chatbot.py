@@ -21,7 +21,7 @@ st.title("Fueza - an AI Chatbot")
 st.text("created by hrushik98(github) / Phani Hrushik Reddy (LinkedIN)")
 
 st.text("")
-input_question = st.text_input("enter the message: ")
+input_question = st.text_input("Ask me anything: ")
 l1 = []
 
 
