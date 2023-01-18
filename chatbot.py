@@ -12,8 +12,8 @@ session = requests.Session()
 session.headers['User-Agent']
 my_headers = {"User-Agent": "Mozilla/5.0 (X11; CrOS x86_64 14685.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.4992.0 Safari/537.36",
               "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"}
-#2 openai.api_key = "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"
-openai.api_key = st.secrets['API_KEY2']
+
+openai.api_key = st.secrets['API_KEY1']
 client = wolframalpha.Client("HYGK4Y-T5TL57KJ8H")
 
 st.title("Created by @Hrush1k")
@@ -46,7 +46,7 @@ l1 = []
 
 def internet_search(question):
 
-  #1 openai.api_key = "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" #dec12 lfqa api key
+ 
   openai.api_key = st.secrets['API_KEY1']
   con = ""
   urls = []
