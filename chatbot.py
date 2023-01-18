@@ -109,7 +109,7 @@ def internet_search(question):
 
     response = openai.Completion.create(
       
-        model="curie:ft-personal-2022-12-12-13-15-37",
+        model="text-davinci-003",
         prompt = "Imagine an AI agent that can generate human-like text based on the Customer query on the Dialogue History and Supporting Texts. The information on the Supporting Texts can be used to reinforce the AI's response. It can provide information on a wide range of topics, answer questions, and engage in conversation on a variety of subjects including history, science, literature, art, and current events. It can provide information on basic facts to more complex topics. If one has a question about a specific topic, It'll do it's best to provide a relevant and accurate response. It can also generate text in a variety of styles and formats, depending on the task at hand. It can write narratives, descriptions, articles, reports, letters, emails, poems, stories and many other types of texts. \n\n###\n\nDialogue History:\nCustomer: "+str(query)+"\n\nSupporting Texts:\nSupporting Text 1: "+str(bm25_passages[0])+"\nSupporting Text 2: "+str(bm25_passages[1])+"\nSupporting Text 3: "+str(bm25_passages[2])+"\nSupporting Text 4: "+str(bm25_passages[3])+"\n\nAgent Response:"+"\nSupporting Text 5: "+str(bm25_passages[4])+"\n\nAgent Response:"+"\nSupporting Text 6: "+str(bm25_passages[5])+"\n\nAgent Response:",
         temperature=0.7,
         max_tokens=500,
