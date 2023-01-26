@@ -14,16 +14,6 @@ st.text("created by @Hrush1k")
 st.text("")
 if st.button("to do list"):
 
-    st.write("""
-To do list:
-1. Improve the User Interface  ✅ 
-2. Fix issue with remembering chat history ✅ 
-2. Take care of punctuation ✅ 
-3. Make it feel more chat-like  
-5. Integrate human voice for input 
-6. Take care of token limit ✅ 
-7. Integrate WolframAlpha
-""")
 st.text("")
 input_question = st.text_input("enter the message: ")
 l1 = []
